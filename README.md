@@ -45,7 +45,9 @@ Let's assume you have a User model and you want to get a CSV of the properties `
 	SeeSVee::FunCsv.create(:name => "user_props", :code => "User.all.map{|u| [u.email, u.created_at, u.first_name]}")
 
 
-
+Go get your file at:
+	
+	YOUR_BUCKET_NAME/csvs/user_props.csv
 
 
 Contributing to see-s-vee
