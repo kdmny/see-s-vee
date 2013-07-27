@@ -6,13 +6,11 @@ class Array
       csv_string << e.to_csv
     end
     config = YAML.load(File.open("#{Rails.root}/config/s3.yml"))[Rails.env]
-    s3 = AWS::S3.new(
+    AWS::S3::Base.establish_connection!(
       :access_key_id => config['access_key_id'],
       :secret_access_key => config['secret_access_key']
     )
-    bucket = s3.buckets[config['bucket']]
-    obj = bucket.objects[filename]
-    obj.write(csv_string)
+    AWS::S3::S3Object.store(filename, csv_string, config['bucket'])
   end
   
   def uniq_by!(&blk)
