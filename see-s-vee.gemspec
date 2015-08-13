@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = SeeSVee::VERSION
   s.authors     = ["Kale McNaney"]
   s.email       = ["kdmny30@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SeeSVee."
-  s.description = "TODO: Description of SeeSVee."
+  s.homepage    = "http://github.com/kdmny/SeeSVee"
+  s.summary     = "An easy way to generate CSVs."
+  s.description = "An easy way to generate CSVs."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
