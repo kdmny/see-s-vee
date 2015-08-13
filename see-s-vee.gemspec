@@ -7,8 +7,8 @@ require "see-s-vee/version"
 Gem::Specification.new do |s|
   s.name        = "see-s-vee"
   s.version     = SeeSVee::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Kale McNaney"]
+  s.email       = ["kdmny30@gmail.com"]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of SeeSVee."
   s.description = "TODO: Description of SeeSVee."
